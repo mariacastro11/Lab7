@@ -5,6 +5,11 @@ que reciba un nombre como argumento y retorne un mensaje que diga "Hola, [nombre
 Si el nombre es vacío o no se proporciona, el mensaje debe ser "Hola, desconocido".
 */
 function saludar(nombre) {
+    if (nombre === undefined || nombre === " ") {
+        return "Hola,desconocido"
+    } else {
+        return "Hola, " + nombre 
+    }
 
 }
 
